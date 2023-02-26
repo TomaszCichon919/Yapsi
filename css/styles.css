@@ -1,0 +1,54 @@
+
+
+ 
+ body
+  {
+    background-color: #F1DBBF
+  }
+ hr
+  {
+    border-style: dotted none none none;
+    
+    border-width: 25px;
+    border-color: beige;
+    height: 0px;
+    width: 30%;
+  }
+table
+{
+  border-color: #FDA769;
+  border-width: 5px;
+} 
+h1
+{
+  color: #3F4E4F;
+  font-style: italic;
+  font-family: cursive;
+  text-align: center;
+  font-size: 80px;
+}
+h2
+{
+  color: #506D84;
+  font-family: cursive;
+  font-size: 40px;
+}
+h3
+{
+  color: #B7C4CF;
+  font-family: cursive;
+}
+table
+{
+  border-collapse: collapse;
+  border-width: 1px;
+  border: 1px
+}
+td
+{
+  text-align: center;
+}
+a
+{
+  font-size: 20px;
+}

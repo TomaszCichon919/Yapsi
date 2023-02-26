@@ -4,16 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        .MyTable
+        {
+            border-style: solid;
+            border-color: #FEC868;
+            
+        }
+        img.a
+        {
+            vertical-align: text-top;
+        }
+        img.b
+        {
+        vertical-align: super;
+        }
+        p
+        {
+            font-family: "Audiowide", sans-serif;
+        }
+        h4
+        {
+            font-family: "Audiowide", sans-serif; }
+        #link
+        {
+            font-family: cursive;
+        }
+        
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: solid #F1DBBF;
+  padding: 8px;}
+#customers tr:nth-child(even){background-color: #CC9B6D;}
+
+#customers tr:hover {background-color: #ddd;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #CC9B6D;
+  color: white;
+        }
+    
+    </style>
     <title>Strona Yapsi</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <table cellspacing="50">
         <tr>
             <td>
-                <img src="profilowe.png" alt="Yapsi" width="200" height="200">
+                <img class="a" src="profilowe.png" alt="Yapsi" width="200" height="200">
             </td>
             <td><h1>Yapsi Von .......</h1>
-            <h2>Moja strona:)</h2></td>
+            <h2>Moja strona <img src="paw.png" alt="paw" height="50"></h2></td>
             </tr>
     </table>
     <hr>
@@ -26,25 +77,26 @@
         <li>ogólnie lubie wyszystko!<em>(tylko nie deszcz)</em></li>
     </ul>
     <h4>Moje ulubione jedzonko (od 1 do 6)</h4>
-  <table border="1" cellspacing="1">
+    <div class="MyDiv">
+  <table class="MyTable" border="1">
    <tr>
       <td>
-         <table>
+         <table class="MyTable">
             <tr>
           <td>mięsko</td>
           <td>🐾🐾🐾🐾</td>
           </tr>
           <tr>
             <td>buraki</td>
-            <td>🐾</td>
+            <td style="text-align: left;">🐾</td>
           </tr>
         </table>
       </td>
       <td>
-         <table>
+         <table class="MyTable">
             <tr>
             <td>marchweka</td>
-            <td>🐾🐾🐾</td>
+            <td style="text-align: left;">🐾🐾🐾</td>
             </tr>
       <tr>
          <td>przysmaczek</td>
@@ -54,11 +106,13 @@
       </td>
    </tr>
   </table>
-<h4>Mój życiorys</h4>
+    </div>
+    <hr>
+<h4>Ważne chwile</h4>
 
-<table cellspacing="10">
+<table cellpadding="20">
     <tr>
-        <td><table border="1">
+        <td><table id="customers" cellpadding="5">
             <thead>
                 <tr>
                 <th colspan="2" style="background-color: green">Dobre chwile</th>
@@ -82,7 +136,7 @@
                 </tr>
             </tbody>
          </table></td>
-         <td> <td><table border="1">
+         <td><table id="customers"cellspacing="5">
             <thead>
                 <tr>
                     <th colspan="2" style="background-color: red">Gorsze chwile</th>
@@ -109,22 +163,16 @@
          </table>
     </tr>
 </table>
+<hr>
 <table cellspacing="50">
     <tr>
         <td><h3>Zobacz moje zdjęcia</h3>
-<a href="gallery.html">Galeria</a></td>
+<a id="link" href="gallery.html">Galeria</a></td>
 <td><h3>Tu biegaliśmy!</h3>
-<a href="https://www.youtube.com/watch?v=mFkYzlOOQLA">Zawody</a></td>
+<a id="link" href="https://www.youtube.com/watch?v=mFkYzlOOQLA">Zawody</a></td>
 </tr>
 </table>
-<h4>Masz pytanie?</h4>
-<form action="mailto:tomekcichon03005@gmail.com" method="post" enctype="text/plain">
-    <label>Imie:</label>
-    <input type="text" name="Twoje imie" value=""><br><br>
-    <label>mail:</label>
-    <input type="email" name="email" value=""><br><br>
-    <label>Wiadomość:</label><br>
-    <textarea name="Tekst" rows="10" cols="30"></textarea><br>
-    <input type="submit" name="">
-</form>
+<hr>
+<h4><strong>Masz pytanie? Kliknij łapkę!</strong><a href="contact.html"><img src="paw.png" alt="paw" height="50"></a></h4>
+
 </html>
